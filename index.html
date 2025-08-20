@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📸 Terminplaner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="Logo-weiss-Sacha-Kappeler.jpg" alt="Logo" class="logo" />
+      <h1>📸 Terminplaner</h1>
+    </header>
+
+    <form id="form">
+      <label for="title">Titel</label>
+      <input id="title" type="text" placeholder="z. B. Fotoshooting Outdoor am See" required />
+
+      <div class="grid">
+        <div>
+          <label for="date">Datum</label>
+          <input id="date" type="date" required />
+        </div>
+        <div>
+          <label for="time">Uhrzeit</label>
+          <input id="time" type="time" required />
+        </div>
+      </div>
+
+      <label for="location">Ort</label>
+      <input id="location" type="text" placeholder="z. B. Horwerstrasse 12" required />
+
+      <label for="message">Nachricht (optional)</label>
+      <textarea id="message" rows="3" placeholder="Persönliche Nachricht …"></textarea>
+
+      <button class="primary" type="submit">✅ Termin erstellen</button>
+    </form>
+
+    <section id="result" class="hidden">
+      <h2>Termin erstellt</h2>
+      <div id="preview" class="preview"></div>
+
+      <a id="calendarCta" class="cta" target="_blank" rel="noopener">🗓️ Termin in Kalender eintragen</a>
+
+      <div class="share">
+        <h3>Teilen</h3>
+        <div class="btnrow">
+          <a id="waBtn" class="btn wa" target="_blank" rel="noopener">💬 WhatsApp</a>
+          <a id="smsBtn" class="btn sms" target="_blank" rel="noopener">📱 SMS</a>
+          <a id="mailBtn" class="btn mail" target="_blank" rel="noopener">✉️ E‑Mail</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <small>Zeitzone: Europe/Zurich • Dauer: 1 h • Mit VALARM (24 h & 1 h)</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

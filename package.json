@@ -1,0 +1,9 @@
+{
+  "name": "termin-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Termin-Web-App mit ICS-Generierung und Europe/Zurich Zeitzone",
+  "scripts": {
+    "start": "netlify dev"
+  }
+}
